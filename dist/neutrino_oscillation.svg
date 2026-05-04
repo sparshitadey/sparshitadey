@@ -1,0 +1,436 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 298" width="800" height="298" style="background:#0d1117; border-radius:12px;">
+<defs>
+  <filter id="glow-nue" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3.0" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="glow-num" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3.0" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="glow-sbnd" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="glow-icarus" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="glow-curve" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="glow-src" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <linearGradient id="beam-grad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#1a2233" stop-opacity="0"/>
+    <stop offset="40%"  stop-color="#1a2233" stop-opacity="0.4"/>
+    <stop offset="60%"  stop-color="#1a2233" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#1a2233" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="grad-nue" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#64b5f6" stop-opacity="1"/>
+    <stop offset="55%"  stop-color="#64b5f6" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#1565c0" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="grad-num" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#ff8a80" stop-opacity="1"/>
+    <stop offset="55%"  stop-color="#ff8a80" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#b71c1c" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<style>
+
+  .beam-env   { animation: pulse-beam   4s   ease-in-out infinite alternate; }
+  .det-sbnd   { animation: pulse-sbnd   3s   ease-in-out infinite alternate; }
+  .det-icarus { animation: pulse-icarus 3.5s ease-in-out infinite alternate; }
+  @keyframes pulse-beam   { from{opacity:0.5} to{opacity:0.8} }
+  @keyframes pulse-sbnd   { from{opacity:0.3} to{opacity:0.55} }
+  @keyframes pulse-icarus { from{opacity:0.25} to{opacity:0.5} }
+
+  @keyframes fly0 { 0%{transform:translate(60.0px,175.4px);opacity:0} 8%{transform:translate(60.0px,175.4px);opacity:0.79} 92%{transform:translate(160.0px,175.4px);opacity:0.79} 100%{transform:translate(160.0px,175.4px);opacity:0} }
+  #p0{animation:fly0 2.87s linear 0.88s infinite}
+  @keyframes fly1 { 0%{transform:translate(60.0px,189.3px);opacity:0} 8%{transform:translate(60.0px,189.3px);opacity:0.56} 92%{transform:translate(160.0px,189.3px);opacity:0.56} 100%{transform:translate(160.0px,189.3px);opacity:0} }
+  #p1{animation:fly1 3.11s linear 0.28s infinite}
+  @keyframes fly2 { 0%{transform:translate(60.0px,183.1px);opacity:0} 8%{transform:translate(60.0px,183.1px);opacity:0.76} 92%{transform:translate(160.0px,183.1px);opacity:0.76} 100%{transform:translate(160.0px,183.1px);opacity:0} }
+  #p2{animation:fly2 2.84s linear 0.08s infinite}
+  @keyframes fly3 { 0%{transform:translate(60.0px,178.5px);opacity:0} 8%{transform:translate(60.0px,178.5px);opacity:0.55} 92%{transform:translate(160.0px,178.5px);opacity:0.55} 100%{transform:translate(160.0px,178.5px);opacity:0} }
+  #p3{animation:fly3 3.57s linear 1.89s infinite}
+  @keyframes fly4 { 0%{transform:translate(60.0px,186.2px);opacity:0} 8%{transform:translate(60.0px,186.2px);opacity:0.87} 92%{transform:translate(160.0px,186.2px);opacity:0.87} 100%{transform:translate(160.0px,186.2px);opacity:0} }
+  #p4{animation:fly4 2.79s linear 1.09s infinite}
+  @keyframes fly5 { 0%{transform:translate(60.0px,176.5px);opacity:0} 8%{transform:translate(60.0px,176.5px);opacity:0.75} 92%{transform:translate(160.0px,176.5px);opacity:0.75} 100%{transform:translate(160.0px,176.5px);opacity:0} }
+  #p5{animation:fly5 3.62s linear 0.31s infinite}
+  @keyframes fly6 { 0%{transform:translate(60.0px,186.7px);opacity:0} 8%{transform:translate(60.0px,186.7px);opacity:0.67} 92%{transform:translate(160.0px,186.7px);opacity:0.67} 100%{transform:translate(160.0px,186.7px);opacity:0} }
+  #p6{animation:fly6 3.77s linear 1.72s infinite}
+  @keyframes fly7 { 0%{transform:translate(60.0px,188.3px);opacity:0} 8%{transform:translate(60.0px,188.3px);opacity:0.74} 92%{transform:translate(160.0px,188.3px);opacity:0.74} 100%{transform:translate(160.0px,188.3px);opacity:0} }
+  #p7{animation:fly7 3.63s linear 1.98s infinite}
+  @keyframes fly8 { 0%{transform:translate(60.0px,175.7px);opacity:0} 8%{transform:translate(60.0px,175.7px);opacity:0.58} 92%{transform:translate(160.0px,175.7px);opacity:0.58} 100%{transform:translate(160.0px,175.7px);opacity:0} }
+  #p8{animation:fly8 2.95s linear 0.73s infinite}
+  @keyframes fly9 { 0%{transform:translate(60.0px,176.6px);opacity:0} 8%{transform:translate(60.0px,176.6px);opacity:0.67} 92%{transform:translate(160.0px,176.6px);opacity:0.67} 100%{transform:translate(160.0px,176.6px);opacity:0} }
+  #p9{animation:fly9 3.36s linear 0.89s infinite}
+  @keyframes fly10 { 0%{transform:translate(60.0px,178.4px);opacity:0} 8%{transform:translate(60.0px,178.4px);opacity:0.76} 92%{transform:translate(160.0px,178.4px);opacity:0.76} 100%{transform:translate(160.0px,178.4px);opacity:0} }
+  #p10{animation:fly10 3.72s linear 0.85s infinite}
+  @keyframes fly11 { 0%{transform:translate(60.0px,177.7px);opacity:0} 8%{transform:translate(60.0px,177.7px);opacity:0.68} 92%{transform:translate(160.0px,177.7px);opacity:0.68} 100%{transform:translate(160.0px,177.7px);opacity:0} }
+  #p11{animation:fly11 2.80s linear 2.33s infinite}
+  @keyframes fly12 { 0%{transform:translate(60.0px,185.2px);opacity:0} 8%{transform:translate(60.0px,185.2px);opacity:0.83} 92%{transform:translate(160.0px,185.2px);opacity:0.83} 100%{transform:translate(160.0px,185.2px);opacity:0} }
+  #p12{animation:fly12 3.42s linear 1.78s infinite}
+  @keyframes fly13 { 0%{transform:translate(60.0px,178.7px);opacity:0} 8%{transform:translate(60.0px,178.7px);opacity:0.64} 92%{transform:translate(160.0px,178.7px);opacity:0.64} 100%{transform:translate(160.0px,178.7px);opacity:0} }
+  #p13{animation:fly13 2.98s linear 0.10s infinite}
+  @keyframes fly14 { 0%{transform:translate(60.0px,190.1px);opacity:0} 8%{transform:translate(60.0px,190.1px);opacity:0.77} 92%{transform:translate(160.0px,190.1px);opacity:0.77} 100%{transform:translate(160.0px,190.1px);opacity:0} }
+  #p14{animation:fly14 2.98s linear 2.80s infinite}
+  @keyframes fly15 { 0%{transform:translate(60.0px,189.6px);opacity:0} 8%{transform:translate(60.0px,189.6px);opacity:0.63} 92%{transform:translate(160.0px,189.6px);opacity:0.63} 100%{transform:translate(160.0px,189.6px);opacity:0} }
+  #p15{animation:fly15 2.92s linear 1.47s infinite}
+  @keyframes fly16 { 0%{transform:translate(60.0px,179.2px);opacity:0} 8%{transform:translate(60.0px,179.2px);opacity:0.68} 92%{transform:translate(160.0px,179.2px);opacity:0.68} 100%{transform:translate(160.0px,179.2px);opacity:0} }
+  #p16{animation:fly16 3.68s linear 1.87s infinite}
+  @keyframes fly17 { 0%{transform:translate(60.0px,191.0px);opacity:0} 8%{transform:translate(60.0px,191.0px);opacity:0.57} 92%{transform:translate(160.0px,191.0px);opacity:0.57} 100%{transform:translate(160.0px,191.0px);opacity:0} }
+  #p17{animation:fly17 2.71s linear 1.63s infinite}
+  @keyframes fly18 { 0%{transform:translate(60.0px,185.0px);opacity:0} 8%{transform:translate(60.0px,185.0px);opacity:0.57} 92%{transform:translate(160.0px,185.0px);opacity:0.57} 100%{transform:translate(160.0px,185.0px);opacity:0} }
+  #p18{animation:fly18 3.11s linear 2.53s infinite}
+  @keyframes fly19 { 0%{transform:translate(60.0px,190.9px);opacity:0} 8%{transform:translate(60.0px,190.9px);opacity:0.83} 92%{transform:translate(160.0px,190.9px);opacity:0.83} 100%{transform:translate(160.0px,190.9px);opacity:0} }
+  #p19{animation:fly19 3.77s linear 1.69s infinite}
+  @keyframes fly20 { 0%{transform:translate(60.0px,186.5px);opacity:0} 8%{transform:translate(60.0px,186.5px);opacity:0.64} 92%{transform:translate(160.0px,186.5px);opacity:0.64} 100%{transform:translate(160.0px,186.5px);opacity:0} }
+  #p20{animation:fly20 3.24s linear 2.18s infinite}
+  @keyframes fly21 { 0%{transform:translate(60.0px,176.8px);opacity:0} 8%{transform:translate(60.0px,176.8px);opacity:0.86} 92%{transform:translate(160.0px,176.8px);opacity:0.86} 100%{transform:translate(160.0px,176.8px);opacity:0} }
+  #p21{animation:fly21 3.14s linear 1.39s infinite}
+  @keyframes fly22 { 0%{transform:translate(60.0px,179.2px);opacity:0} 8%{transform:translate(60.0px,179.2px);opacity:0.85} 92%{transform:translate(160.0px,179.2px);opacity:0.85} 100%{transform:translate(160.0px,179.2px);opacity:0} }
+  #p22{animation:fly22 2.81s linear 1.60s infinite}
+  @keyframes fly23 { 0%{transform:translate(60.0px,179.8px);opacity:0} 8%{transform:translate(60.0px,179.8px);opacity:0.60} 92%{transform:translate(160.0px,179.8px);opacity:0.60} 100%{transform:translate(160.0px,179.8px);opacity:0} }
+  #p23{animation:fly23 3.33s linear 2.04s infinite}
+  @keyframes fly24 { 0%{transform:translate(60.0px,183.6px);opacity:0} 8%{transform:translate(60.0px,183.6px);opacity:0.55} 92%{transform:translate(160.0px,183.6px);opacity:0.55} 100%{transform:translate(160.0px,183.6px);opacity:0} }
+  #p24{animation:fly24 3.24s linear 2.49s infinite}
+  @keyframes fly25 { 0%{transform:translate(60.0px,175.3px);opacity:0} 8%{transform:translate(60.0px,175.3px);opacity:0.82} 92%{transform:translate(160.0px,175.3px);opacity:0.82} 100%{transform:translate(160.0px,175.3px);opacity:0} }
+  #p25{animation:fly25 3.65s linear 2.97s infinite}
+  @keyframes fly26 { 0%{transform:translate(60.0px,175.9px);opacity:0} 8%{transform:translate(60.0px,175.9px);opacity:0.58} 92%{transform:translate(160.0px,175.9px);opacity:0.58} 100%{transform:translate(160.0px,175.9px);opacity:0} }
+  #p26{animation:fly26 3.74s linear 2.81s infinite}
+  @keyframes fly27 { 0%{transform:translate(60.0px,176.1px);opacity:0} 8%{transform:translate(60.0px,176.1px);opacity:0.59} 92%{transform:translate(160.0px,176.1px);opacity:0.59} 100%{transform:translate(160.0px,176.1px);opacity:0} }
+  #p27{animation:fly27 3.52s linear 2.43s infinite}
+  @keyframes fly28 { 0%{transform:translate(60.0px,183.8px);opacity:0} 8%{transform:translate(60.0px,183.8px);opacity:0.69} 92%{transform:translate(160.0px,183.8px);opacity:0.69} 100%{transform:translate(160.0px,183.8px);opacity:0} }
+  #p28{animation:fly28 3.65s linear 0.85s infinite}
+  @keyframes fly29 { 0%{transform:translate(60.0px,183.6px);opacity:0} 8%{transform:translate(60.0px,183.6px);opacity:0.65} 92%{transform:translate(160.0px,183.6px);opacity:0.65} 100%{transform:translate(160.0px,183.6px);opacity:0} }
+  #p29{animation:fly29 2.84s linear 2.34s infinite}
+  @keyframes fly30 { 0%{transform:translate(160.0px,185.4px);opacity:0} 8%{transform:translate(160.0px,185.4px);opacity:0.59} 92%{transform:translate(680.0px,185.4px);opacity:0.59} 100%{transform:translate(680.0px,185.4px);opacity:0} }
+  #p30{animation:fly30 3.22s linear 1.40s infinite}
+  @keyframes fly31 { 0%{transform:translate(160.0px,180.4px);opacity:0} 8%{transform:translate(160.0px,180.4px);opacity:0.62} 92%{transform:translate(680.0px,180.4px);opacity:0.62} 100%{transform:translate(680.0px,180.4px);opacity:0} }
+  #p31{animation:fly31 2.88s linear 1.88s infinite}
+  @keyframes fly32 { 0%{transform:translate(160.0px,185.1px);opacity:0} 8%{transform:translate(160.0px,185.1px);opacity:0.83} 92%{transform:translate(680.0px,185.1px);opacity:0.83} 100%{transform:translate(680.0px,185.1px);opacity:0} }
+  #p32{animation:fly32 3.69s linear 0.73s infinite}
+  @keyframes fly33 { 0%{transform:translate(160.0px,178.8px);opacity:0} 8%{transform:translate(160.0px,178.8px);opacity:0.59} 92%{transform:translate(680.0px,178.8px);opacity:0.59} 100%{transform:translate(680.0px,178.8px);opacity:0} }
+  #p33{animation:fly33 2.86s linear 2.14s infinite}
+  @keyframes fly34 { 0%{transform:translate(160.0px,184.1px);opacity:0} 8%{transform:translate(160.0px,184.1px);opacity:0.82} 92%{transform:translate(680.0px,184.1px);opacity:0.82} 100%{transform:translate(680.0px,184.1px);opacity:0} }
+  #p34{animation:fly34 3.54s linear 1.51s infinite}
+  @keyframes fly35 { 0%{transform:translate(160.0px,176.6px);opacity:0} 8%{transform:translate(160.0px,176.6px);opacity:0.70} 92%{transform:translate(680.0px,176.6px);opacity:0.70} 100%{transform:translate(680.0px,176.6px);opacity:0} }
+  #p35{animation:fly35 3.11s linear 1.38s infinite}
+  @keyframes fly36 { 0%{transform:translate(160.0px,185.8px);opacity:0} 8%{transform:translate(160.0px,185.8px);opacity:0.68} 92%{transform:translate(680.0px,185.8px);opacity:0.68} 100%{transform:translate(680.0px,185.8px);opacity:0} }
+  #p36{animation:fly36 2.72s linear 3.15s infinite}
+  @keyframes fly37 { 0%{transform:translate(160.0px,188.8px);opacity:0} 8%{transform:translate(160.0px,188.8px);opacity:0.70} 92%{transform:translate(680.0px,188.8px);opacity:0.70} 100%{transform:translate(680.0px,188.8px);opacity:0} }
+  #p37{animation:fly37 2.83s linear 0.80s infinite}
+  @keyframes fly38 { 0%{transform:translate(160.0px,179.5px);opacity:0} 8%{transform:translate(160.0px,179.5px);opacity:0.70} 92%{transform:translate(680.0px,179.5px);opacity:0.70} 100%{transform:translate(680.0px,179.5px);opacity:0} }
+  #p38{animation:fly38 3.71s linear 0.80s infinite}
+  @keyframes fly39 { 0%{transform:translate(160.0px,183.8px);opacity:0} 8%{transform:translate(160.0px,183.8px);opacity:0.83} 92%{transform:translate(680.0px,183.8px);opacity:0.83} 100%{transform:translate(680.0px,183.8px);opacity:0} }
+  #p39{animation:fly39 3.80s linear 0.16s infinite}
+  @keyframes fly40 { 0%{transform:translate(160.0px,189.8px);opacity:0} 8%{transform:translate(160.0px,189.8px);opacity:0.71} 92%{transform:translate(680.0px,189.8px);opacity:0.71} 100%{transform:translate(680.0px,189.8px);opacity:0} }
+  #p40{animation:fly40 2.80s linear 2.72s infinite}
+  @keyframes fly41 { 0%{transform:translate(160.0px,181.4px);opacity:0} 8%{transform:translate(160.0px,181.4px);opacity:0.88} 92%{transform:translate(680.0px,181.4px);opacity:0.88} 100%{transform:translate(680.0px,181.4px);opacity:0} }
+  #p41{animation:fly41 3.05s linear 0.19s infinite}
+  @keyframes fly42 { 0%{transform:translate(160.0px,187.5px);opacity:0} 8%{transform:translate(160.0px,187.5px);opacity:0.87} 92%{transform:translate(680.0px,187.5px);opacity:0.87} 100%{transform:translate(680.0px,187.5px);opacity:0} }
+  #p42{animation:fly42 3.11s linear 1.46s infinite}
+  @keyframes fly43 { 0%{transform:translate(160.0px,183.9px);opacity:0} 8%{transform:translate(160.0px,183.9px);opacity:0.65} 92%{transform:translate(680.0px,183.9px);opacity:0.65} 100%{transform:translate(680.0px,183.9px);opacity:0} }
+  #p43{animation:fly43 2.79s linear 2.30s infinite}
+  @keyframes fly44 { 0%{transform:translate(160.0px,184.3px);opacity:0} 8%{transform:translate(160.0px,184.3px);opacity:0.57} 92%{transform:translate(680.0px,184.3px);opacity:0.57} 100%{transform:translate(680.0px,184.3px);opacity:0} }
+  #p44{animation:fly44 3.50s linear 1.74s infinite}
+  @keyframes fly45 { 0%{transform:translate(160.0px,183.0px);opacity:0} 8%{transform:translate(160.0px,183.0px);opacity:0.87} 92%{transform:translate(680.0px,183.0px);opacity:0.87} 100%{transform:translate(680.0px,183.0px);opacity:0} }
+  #p45{animation:fly45 2.79s linear 2.73s infinite}
+  @keyframes fly46 { 0%{transform:translate(160.0px,178.0px);opacity:0} 8%{transform:translate(160.0px,178.0px);opacity:0.63} 92%{transform:translate(680.0px,178.0px);opacity:0.63} 100%{transform:translate(680.0px,178.0px);opacity:0} }
+  #p46{animation:fly46 3.41s linear 1.90s infinite}
+  @keyframes fly47 { 0%{transform:translate(160.0px,189.2px);opacity:0} 8%{transform:translate(160.0px,189.2px);opacity:0.75} 92%{transform:translate(680.0px,189.2px);opacity:0.75} 100%{transform:translate(680.0px,189.2px);opacity:0} }
+  #p47{animation:fly47 3.31s linear 0.79s infinite}
+  @keyframes fly48 { 0%{transform:translate(160.0px,184.3px);opacity:0} 8%{transform:translate(160.0px,184.3px);opacity:0.62} 92%{transform:translate(680.0px,184.3px);opacity:0.62} 100%{transform:translate(680.0px,184.3px);opacity:0} }
+  #p48{animation:fly48 3.72s linear 1.67s infinite}
+  @keyframes fly49 { 0%{transform:translate(160.0px,178.8px);opacity:0} 8%{transform:translate(160.0px,178.8px);opacity:0.65} 92%{transform:translate(680.0px,178.8px);opacity:0.65} 100%{transform:translate(680.0px,178.8px);opacity:0} }
+  #p49{animation:fly49 3.41s linear 1.27s infinite}
+  @keyframes fly50 { 0%{transform:translate(160.0px,187.0px);opacity:0} 8%{transform:translate(160.0px,187.0px);opacity:0.88} 92%{transform:translate(680.0px,187.0px);opacity:0.88} 100%{transform:translate(680.0px,187.0px);opacity:0} }
+  #p50{animation:fly50 3.15s linear 0.23s infinite}
+  @keyframes fly51 { 0%{transform:translate(160.0px,176.2px);opacity:0} 8%{transform:translate(160.0px,176.2px);opacity:0.86} 92%{transform:translate(680.0px,176.2px);opacity:0.86} 100%{transform:translate(680.0px,176.2px);opacity:0} }
+  #p51{animation:fly51 2.92s linear 0.68s infinite}
+  @keyframes fly52 { 0%{transform:translate(160.0px,189.1px);opacity:0} 8%{transform:translate(160.0px,189.1px);opacity:0.83} 92%{transform:translate(680.0px,189.1px);opacity:0.83} 100%{transform:translate(680.0px,189.1px);opacity:0} }
+  #p52{animation:fly52 2.79s linear 1.18s infinite}
+  @keyframes fly53 { 0%{transform:translate(160.0px,184.8px);opacity:0} 8%{transform:translate(160.0px,184.8px);opacity:0.55} 92%{transform:translate(680.0px,184.8px);opacity:0.55} 100%{transform:translate(680.0px,184.8px);opacity:0} }
+  #p53{animation:fly53 3.38s linear 3.16s infinite}
+  @keyframes fly54 { 0%{transform:translate(160.0px,179.8px);opacity:0} 8%{transform:translate(160.0px,179.8px);opacity:0.59} 92%{transform:translate(680.0px,179.8px);opacity:0.59} 100%{transform:translate(680.0px,179.8px);opacity:0} }
+  #p54{animation:fly54 3.73s linear 2.12s infinite}
+  @keyframes fly55 { 0%{transform:translate(160.0px,176.7px);opacity:0} 8%{transform:translate(160.0px,176.7px);opacity:0.75} 92%{transform:translate(680.0px,176.7px);opacity:0.75} 100%{transform:translate(680.0px,176.7px);opacity:0} }
+  #p55{animation:fly55 2.93s linear 1.77s infinite}
+  @keyframes fly56 { 0%{transform:translate(160.0px,178.3px);opacity:0} 8%{transform:translate(160.0px,178.3px);opacity:0.71} 92%{transform:translate(680.0px,178.3px);opacity:0.71} 100%{transform:translate(680.0px,178.3px);opacity:0} }
+  #p56{animation:fly56 2.92s linear 2.03s infinite}
+  @keyframes fly57 { 0%{transform:translate(160.0px,188.5px);opacity:0} 8%{transform:translate(160.0px,188.5px);opacity:0.64} 92%{transform:translate(680.0px,188.5px);opacity:0.64} 100%{transform:translate(680.0px,188.5px);opacity:0} }
+  #p57{animation:fly57 3.11s linear 0.30s infinite}
+  @keyframes fly58 { 0%{transform:translate(160.0px,187.3px);opacity:0} 8%{transform:translate(160.0px,187.3px);opacity:0.79} 92%{transform:translate(680.0px,187.3px);opacity:0.79} 100%{transform:translate(680.0px,187.3px);opacity:0} }
+  #p58{animation:fly58 2.91s linear 2.04s infinite}
+  @keyframes fly59 { 0%{transform:translate(160.0px,181.8px);opacity:0} 8%{transform:translate(160.0px,181.8px);opacity:0.84} 92%{transform:translate(680.0px,181.8px);opacity:0.84} 100%{transform:translate(680.0px,181.8px);opacity:0} }
+  #p59{animation:fly59 2.69s linear 0.03s infinite}
+</style>
+<rect x="44" y="10" width="736" height="68" fill="#0d1117" rx="3" opacity="0.5"/>
+<line x1="44" y1="78" x2="780" y2="78" stroke="#3d4450" stroke-width="1" opacity="0.8"/>
+<line x1="44" y1="10" x2="44" y2="78" stroke="#3d4450" stroke-width="1" opacity="0.8"/>
+<line x1="41" y1="78.0" x2="44" y2="78.0" stroke="#3d4450" stroke-width="1"/>
+<text x="39" y="81.0" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e" opacity="0.7">0</text>
+<line x1="44" y1="78.0" x2="780" y2="78.0" stroke="#3d4450" stroke-width="0.5" stroke-dasharray="3 4" opacity="0.3"/>
+<line x1="41" y1="47.8" x2="44" y2="47.8" stroke="#3d4450" stroke-width="1"/>
+<text x="39" y="50.8" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e" opacity="0.7">0.2</text>
+<line x1="44" y1="47.8" x2="780" y2="47.8" stroke="#3d4450" stroke-width="0.5" stroke-dasharray="3 4" opacity="0.3"/>
+<line x1="41" y1="17.6" x2="44" y2="17.6" stroke="#3d4450" stroke-width="1"/>
+<text x="39" y="20.6" text-anchor="end" font-family="monospace" font-size="8" fill="#8b949e" opacity="0.7">0.4</text>
+<line x1="44" y1="17.6" x2="780" y2="17.6" stroke="#3d4450" stroke-width="0.5" stroke-dasharray="3 4" opacity="0.3"/>
+<text x="412" y="292" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e" opacity="0.6">L/E  [km/GeV]</text>
+<text x="775" y="22" text-anchor="end" font-family="monospace" font-size="8" fill="#a8d8a8" opacity="0.6">&#916;m&#178; = 3 eV&#178;</text>
+<text x="10" y="44" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b949e" opacity="0.6" transform="rotate(-90,10,44)">P(&#957;e)</text>
+<polyline points="44.0,78.0 46.5,78.0 48.9,78.0 51.4,77.9 53.8,77.9 56.3,77.8 58.7,77.7 61.2,77.6 63.6,77.4 66.1,77.3 68.5,77.1 71.0,76.9 73.4,76.7 75.9,76.5 78.3,76.2 80.8,76.0 83.3,75.7 85.7,75.4 88.2,75.1 90.6,74.7 93.1,74.4 95.5,74.0 98.0,73.6 100.4,73.2 102.9,72.8 105.3,72.4 107.8,72.0 110.2,71.5 112.7,71.0 115.1,70.5 117.6,70.0 120.1,69.5 122.5,69.0 125.0,68.4 127.4,67.9 129.9,67.3 132.3,66.7 134.8,66.1 137.2,65.5 139.7,64.9 142.1,64.2 144.6,63.6 147.0,62.9 149.5,62.3 151.9,61.6 154.4,60.9 156.9,60.2 159.3,59.5 161.8,58.8 164.2,58.0 166.7,57.3 169.1,56.5 171.6,55.8 174.0,55.0 176.5,54.2 178.9,53.5 181.4,52.7 183.8,51.9 186.3,51.1 188.7,50.3 191.2,49.5 193.7,48.7 196.1,47.9 198.6,47.1 201.0,46.2 203.5,45.4 205.9,44.6 208.4,43.8 210.8,42.9 213.3,42.1 215.7,41.3 218.2,40.4 220.6,39.6 223.1,38.8 225.5,37.9 228.0,37.1 230.5,36.3 232.9,35.4 235.4,34.6 237.8,33.8 240.3,33.0 242.7,32.2 245.2,31.4 247.6,30.5 250.1,29.7 252.5,28.9 255.0,28.2 257.4,27.4 259.9,26.6 262.3,25.8 264.8,25.1 267.3,24.3 269.7,23.5 272.2,22.8 274.6,22.1 277.1,21.3 279.5,20.6 282.0,19.9 284.4,19.2 286.9,18.5 289.3,17.9 291.8,17.2 294.2,16.5 296.7,15.9 299.1,15.3 301.6,14.6 304.1,14.0 306.5,13.4 309.0,12.9 311.4,12.3 313.9,11.7 316.3,11.2 318.8,10.7 321.2,10.2 323.7,9.7 326.1,9.2 328.6,8.7 331.0,8.3 333.5,7.8 335.9,7.4 338.4,7.0 340.9,6.6 343.3,6.2 345.8,5.9 348.2,5.5 350.7,5.2 353.1,4.9 355.6,4.6 358.0,4.4 360.5,4.1 362.9,3.9 365.4,3.7 367.8,3.5 370.3,3.3 372.7,3.1 375.2,3.0 377.7,2.8 380.1,2.7 382.6,2.6 385.0,2.6 387.5,2.5 389.9,2.5 392.4,2.4 394.8,2.4 397.3,2.5 399.7,2.5 402.2,2.6 404.6,2.6 407.1,2.7 409.5,2.8 412.0,3.0 414.5,3.1 416.9,3.3 419.4,3.5 421.8,3.7 424.3,3.9 426.7,4.1 429.2,4.4 431.6,4.6 434.1,4.9 436.5,5.2 439.0,5.5 441.4,5.9 443.9,6.2 446.3,6.6 448.8,7.0 451.3,7.4 453.7,7.8 456.2,8.3 458.6,8.7 461.1,9.2 463.5,9.7 466.0,10.2 468.4,10.7 470.9,11.2 473.3,11.7 475.8,12.3 478.2,12.9 480.7,13.4 483.1,14.0 485.6,14.6 488.1,15.2 490.5,15.9 493.0,16.5 495.4,17.2 497.9,17.8 500.3,18.5 502.8,19.2 505.2,19.9 507.7,20.6 510.1,21.3 512.6,22.1 515.0,22.8 517.5,23.5 519.9,24.3 522.4,25.0 524.9,25.8 527.3,26.6 529.8,27.4 532.2,28.1 534.7,28.9 537.1,29.7 539.6,30.5 542.0,31.3 544.5,32.2 546.9,33.0 549.4,33.8 551.8,34.6 554.3,35.4 556.7,36.3 559.2,37.1 561.7,37.9 564.1,38.8 566.6,39.6 569.0,40.4 571.5,41.3 573.9,42.1 576.4,42.9 578.8,43.7 581.3,44.6 583.7,45.4 586.2,46.2 588.6,47.0 591.1,47.9 593.5,48.7 596.0,49.5 598.5,50.3 600.9,51.1 603.4,51.9 605.8,52.7 608.3,53.5 610.7,54.2 613.2,55.0 615.6,55.8 618.1,56.5 620.5,57.3 623.0,58.0 625.4,58.7 627.9,59.5 630.3,60.2 632.8,60.9 635.3,61.6 637.7,62.3 640.2,62.9 642.6,63.6 645.1,64.2 647.5,64.9 650.0,65.5 652.4,66.1 654.9,66.7 657.3,67.3 659.8,67.9 662.2,68.4 664.7,69.0 667.1,69.5 669.6,70.0 672.1,70.5 674.5,71.0 677.0,71.5 679.4,72.0 681.9,72.4 684.3,72.8 686.8,73.2 689.2,73.6 691.7,74.0 694.1,74.4 696.6,74.7 699.0,75.1 701.5,75.4 703.9,75.7 706.4,75.9 708.9,76.2 711.3,76.5 713.8,76.7 716.2,76.9 718.7,77.1 721.1,77.3 723.6,77.4 726.0,77.5 728.5,77.7 730.9,77.8 733.4,77.9 735.8,77.9 738.3,78.0 740.7,78.0 743.2,78.0 745.7,78.0 748.1,78.0 750.6,77.9 753.0,77.9 755.5,77.8 757.9,77.7 760.4,77.6 762.8,77.4 765.3,77.3 767.7,77.1 770.2,76.9 772.6,76.7 775.1,76.5 777.5,76.2 780.0,76.0" fill="none" stroke="#a8d8a8" stroke-width="3" opacity="0.15" filter="url(#glow-curve)"/>
+<polyline points="44.0,78.0 46.5,78.0 48.9,78.0 51.4,77.9 53.8,77.9 56.3,77.8 58.7,77.7 61.2,77.6 63.6,77.4 66.1,77.3 68.5,77.1 71.0,76.9 73.4,76.7 75.9,76.5 78.3,76.2 80.8,76.0 83.3,75.7 85.7,75.4 88.2,75.1 90.6,74.7 93.1,74.4 95.5,74.0 98.0,73.6 100.4,73.2 102.9,72.8 105.3,72.4 107.8,72.0 110.2,71.5 112.7,71.0 115.1,70.5 117.6,70.0 120.1,69.5 122.5,69.0 125.0,68.4 127.4,67.9 129.9,67.3 132.3,66.7 134.8,66.1 137.2,65.5 139.7,64.9 142.1,64.2 144.6,63.6 147.0,62.9 149.5,62.3 151.9,61.6 154.4,60.9 156.9,60.2 159.3,59.5 161.8,58.8 164.2,58.0 166.7,57.3 169.1,56.5 171.6,55.8 174.0,55.0 176.5,54.2 178.9,53.5 181.4,52.7 183.8,51.9 186.3,51.1 188.7,50.3 191.2,49.5 193.7,48.7 196.1,47.9 198.6,47.1 201.0,46.2 203.5,45.4 205.9,44.6 208.4,43.8 210.8,42.9 213.3,42.1 215.7,41.3 218.2,40.4 220.6,39.6 223.1,38.8 225.5,37.9 228.0,37.1 230.5,36.3 232.9,35.4 235.4,34.6 237.8,33.8 240.3,33.0 242.7,32.2 245.2,31.4 247.6,30.5 250.1,29.7 252.5,28.9 255.0,28.2 257.4,27.4 259.9,26.6 262.3,25.8 264.8,25.1 267.3,24.3 269.7,23.5 272.2,22.8 274.6,22.1 277.1,21.3 279.5,20.6 282.0,19.9 284.4,19.2 286.9,18.5 289.3,17.9 291.8,17.2 294.2,16.5 296.7,15.9 299.1,15.3 301.6,14.6 304.1,14.0 306.5,13.4 309.0,12.9 311.4,12.3 313.9,11.7 316.3,11.2 318.8,10.7 321.2,10.2 323.7,9.7 326.1,9.2 328.6,8.7 331.0,8.3 333.5,7.8 335.9,7.4 338.4,7.0 340.9,6.6 343.3,6.2 345.8,5.9 348.2,5.5 350.7,5.2 353.1,4.9 355.6,4.6 358.0,4.4 360.5,4.1 362.9,3.9 365.4,3.7 367.8,3.5 370.3,3.3 372.7,3.1 375.2,3.0 377.7,2.8 380.1,2.7 382.6,2.6 385.0,2.6 387.5,2.5 389.9,2.5 392.4,2.4 394.8,2.4 397.3,2.5 399.7,2.5 402.2,2.6 404.6,2.6 407.1,2.7 409.5,2.8 412.0,3.0 414.5,3.1 416.9,3.3 419.4,3.5 421.8,3.7 424.3,3.9 426.7,4.1 429.2,4.4 431.6,4.6 434.1,4.9 436.5,5.2 439.0,5.5 441.4,5.9 443.9,6.2 446.3,6.6 448.8,7.0 451.3,7.4 453.7,7.8 456.2,8.3 458.6,8.7 461.1,9.2 463.5,9.7 466.0,10.2 468.4,10.7 470.9,11.2 473.3,11.7 475.8,12.3 478.2,12.9 480.7,13.4 483.1,14.0 485.6,14.6 488.1,15.2 490.5,15.9 493.0,16.5 495.4,17.2 497.9,17.8 500.3,18.5 502.8,19.2 505.2,19.9 507.7,20.6 510.1,21.3 512.6,22.1 515.0,22.8 517.5,23.5 519.9,24.3 522.4,25.0 524.9,25.8 527.3,26.6 529.8,27.4 532.2,28.1 534.7,28.9 537.1,29.7 539.6,30.5 542.0,31.3 544.5,32.2 546.9,33.0 549.4,33.8 551.8,34.6 554.3,35.4 556.7,36.3 559.2,37.1 561.7,37.9 564.1,38.8 566.6,39.6 569.0,40.4 571.5,41.3 573.9,42.1 576.4,42.9 578.8,43.7 581.3,44.6 583.7,45.4 586.2,46.2 588.6,47.0 591.1,47.9 593.5,48.7 596.0,49.5 598.5,50.3 600.9,51.1 603.4,51.9 605.8,52.7 608.3,53.5 610.7,54.2 613.2,55.0 615.6,55.8 618.1,56.5 620.5,57.3 623.0,58.0 625.4,58.7 627.9,59.5 630.3,60.2 632.8,60.9 635.3,61.6 637.7,62.3 640.2,62.9 642.6,63.6 645.1,64.2 647.5,64.9 650.0,65.5 652.4,66.1 654.9,66.7 657.3,67.3 659.8,67.9 662.2,68.4 664.7,69.0 667.1,69.5 669.6,70.0 672.1,70.5 674.5,71.0 677.0,71.5 679.4,72.0 681.9,72.4 684.3,72.8 686.8,73.2 689.2,73.6 691.7,74.0 694.1,74.4 696.6,74.7 699.0,75.1 701.5,75.4 703.9,75.7 706.4,75.9 708.9,76.2 711.3,76.5 713.8,76.7 716.2,76.9 718.7,77.1 721.1,77.3 723.6,77.4 726.0,77.5 728.5,77.7 730.9,77.8 733.4,77.9 735.8,77.9 738.3,78.0 740.7,78.0 743.2,78.0 745.7,78.0 748.1,78.0 750.6,77.9 753.0,77.9 755.5,77.8 757.9,77.7 760.4,77.6 762.8,77.4 765.3,77.3 767.7,77.1 770.2,76.9 772.6,76.7 775.1,76.5 777.5,76.2 780.0,76.0" fill="none" stroke="#a8d8a8" stroke-width="1.5" opacity="0.8"/>
+<circle cx="160.6" cy="59.1" r="3.5" fill="#00bcd4" opacity="0.9" filter="url(#glow-curve)"/>
+<circle cx="680.0" cy="72.1" r="3.5" fill="#ce93d8" opacity="0.9" filter="url(#glow-curve)"/>
+<line x1="160.6" y1="59.1" x2="160.6" y2="88" stroke="#00bcd4" stroke-width="1" stroke-dasharray="4 3" opacity="0.35"/>
+<line x1="160" y1="88" x2="160" y2="143" stroke="#00bcd4" stroke-width="1" stroke-dasharray="4 3" opacity="0.35"/>
+<line x1="680.0" y1="72.1" x2="680.0" y2="88" stroke="#ce93d8" stroke-width="1" stroke-dasharray="4 3" opacity="0.35"/>
+<line x1="680" y1="88" x2="680" y2="143" stroke="#ce93d8" stroke-width="1" stroke-dasharray="4 3" opacity="0.35"/>
+<line x1="44" y1="88" x2="780" y2="88" stroke="#3d4450" stroke-width="0.8" stroke-dasharray="6 5" opacity="0.4"/>
+<rect class="beam-env" x="60" y="173" width="650" height="20" rx="5" fill="url(#beam-grad)"/>
+<line x1="60" y1="183" x2="710" y2="183" stroke="#1a2233" stroke-width="1" stroke-dasharray="5 4" opacity="0.35"/>
+<g id="p0">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p1">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p2">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p3">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p4">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p5">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p6">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p7">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p8">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p9">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p10">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p11">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p12">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p13">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p14">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p15">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p16">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p17">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p18">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p19">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p20">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-nue)" filter="url(#glow-nue)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#64b5f6" opacity="0.9"/>
+</g>
+<g id="p21">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p22">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p23">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p24">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p25">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p26">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p27">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p28">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p29">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p30">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p31">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p32">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p33">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p34">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p35">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p36">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p37">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p38">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p39">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p40">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p41">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p42">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p43">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p44">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p45">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p46">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p47">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p48">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p49">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p50">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p51">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p52">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p53">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p54">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p55">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p56">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p57">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<g id="p58">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-nue)" filter="url(#glow-nue)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#64b5f6" opacity="0.9"/>
+</g>
+<g id="p59">
+  <circle cx="0" cy="0" r="6.2" fill="url(#grad-num)" filter="url(#glow-num)" opacity="0.5"/>
+  <circle cx="0" cy="0" r="2.5" fill="#ff8a80" opacity="0.9"/>
+</g>
+<rect x="128" y="141" width="64" height="84" rx="5" fill="#00bcd4" opacity="0.10" filter="url(#glow-sbnd)"/>
+<rect class="det-sbnd" x="130" y="143" width="60" height="80" rx="4" fill="#0d1117" fill-opacity="0.35" stroke="#00bcd4" stroke-width="1.5" stroke-opacity="0.7"/>
+<text x="160" y="238" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#00bcd4" opacity="0.95">SBND</text>
+<text x="160" y="251" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e" opacity="0.6">L = 110 m</text>
+<rect x="648" y="141" width="64" height="84" rx="5" fill="#ce93d8" opacity="0.10" filter="url(#glow-icarus)"/>
+<rect class="det-icarus" x="650" y="143" width="60" height="80" rx="4" fill="#0d1117" fill-opacity="0.35" stroke="#ce93d8" stroke-width="1.5" stroke-opacity="0.7"/>
+<text x="680" y="238" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#ce93d8" opacity="0.95">ICARUS</text>
+<text x="680" y="251" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e" opacity="0.6">L = 600 m</text>
+<circle cx="60" cy="183" r="6" fill="#ffd54f" opacity="0.85" filter="url(#glow-src)"/>
+<text x="60" y="203" text-anchor="middle" font-family="monospace" font-size="10" fill="#ffd54f" opacity="0.8">BNB</text>
+<circle cx="67" cy="282" r="3.5" fill="#ff8a80" opacity="0.9" filter="url(#glow-num)"/>
+<text x="75" y="286" font-family="monospace" font-size="9" fill="#ff8a80" opacity="0.85">&#957;&#956;</text>
+<circle cx="104" cy="282" r="3.5" fill="#64b5f6" opacity="0.9" filter="url(#glow-nue)"/>
+<text x="112" y="286" font-family="monospace" font-size="9" fill="#64b5f6" opacity="0.85">&#957;e</text>
+</svg>
